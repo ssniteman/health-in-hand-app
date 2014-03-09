@@ -7,8 +7,14 @@ $('[rel="popover"]').popover({
 
 $('.orderbtn').click(function() {
 
-    var userinput = $('.options-userinput').val();
+    var nameValue = $('.userinput').val();
 
 
 
 })
+
+
+var customStatus =
+
+
+var thankyouTemplate = _.template($('.thankyouTemplate').text());
