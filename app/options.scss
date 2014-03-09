@@ -1,0 +1,142 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #e7fef6;
+
+    // #fbfefc = whitish
+
+    // #f689b8 = pink
+
+    // #fbb912 = orange
+
+       
+
+    // #e0f1b9 = lighter green
+
+    // #a6cf3c = green
+
+    // #100d0d = black
+
+    // #fae9f4
+
+    // rbg(86,86,86) = greyish black
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid rgb(255,255,255);
+
+    /* Make the masthead heading the same height as the navigation */
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+        padding-bottom: 19px;
+    }
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid rgb(255,255,255);
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    background-color: rgb(255,255,255);
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+    }
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+    p + h4 {
+        margin-top: 28px;
+    }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+.tabs {
+    color: #fbb912;
+}
+
+.smoothie {
+
+    color: white;
+    background-color: #f689b8;
+    border-color: white;
+    // background: #f689b8; /* Old browsers */
+    // background: -moz-linear-gradient(top,  #f689b8 0%, #f4bed5 99%, #f4bed5 99%); /* FF3.6+ */
+    // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f689b8), color-stop(99%,#f4bed5), color-stop(99%,#f4bed5)); /* Chrome,Safari4+ */
+    // background: -webkit-linear-gradient(top,  #f689b8 0%,#f4bed5 99%,#f4bed5 99%); /* Chrome10+,Safari5.1+ */
+    // background: -o-linear-gradient(top,  #f689b8 0%,#f4bed5 99%,#f4bed5 99%); /* Opera 11.10+ */
+    // background: -ms-linear-gradient(top,  #f689b8 0%,#f4bed5 99%,#f4bed5 99%); /* IE10+ */
+    // background: linear-gradient(to bottom,  #f689b8 0%,#f4bed5 99%,#f4bed5 99%); /* W3C */
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f689b8', endColorstr='#f4bed5',GradientType=0 ); /* IE6-9 */
+    // border-color: #cccccc;
+}
+
+.juice {
+    background-color: #a6cf3c;
+    border-color: white;
+    color: white;
+}
+
+.tabs {
+    color: #999999;
+}
