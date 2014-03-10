@@ -117,7 +117,7 @@
                       </label>
                   </div>
 
-                  <a href="final-page.html">
+                <!--   <a href="final-page.html"> -->
                     <button type="button" class="btn btn-success orderbtn">Order</button>
                   </a>
             <div>
@@ -138,6 +138,27 @@
             </div>
 
         </div>
+
+        
+            <div class="modal fade" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Health in Hand</h4>
+                  </div>
+                  <div class="modal-body"> 
+                  <script type="text/template" class="thankyouTemplate">            
+                     <span>Thank you <%= nameValue %>. Your juice with <%= ingredients.join(' and ') %> will be ready for pickup in <%= timeValue %>. </span>
+                  </script>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="final-page.html">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </a>
+                  </div>
+            </div>
+      
 
 
         <!-- build:js scripts/vendor.js -->

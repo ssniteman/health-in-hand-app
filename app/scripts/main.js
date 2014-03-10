@@ -7,37 +7,32 @@ $('[rel="popover"]').popover({
 
 $('.orderbtn').click(function() {
 
-    console.log('clicked')
+
 
     var nameValue = $('.userinput').val();
-
-    console.log(nameValue)
-
     var timeValue = $('.time').val();
-
-
-
     var selectedIngredients = $('.selection input:checked')
-
-    console.log(selectedIngredients)
 
     var ingredients = []
     selectedIngredients.each(function() {
 
         ingredients.push($(this).val());
     })
-    console.log(ingredients)
 
+    setTemplate(nameValue, ingredients, timeValue);
 
+    $('#myModal').modal()
+
+    console.log('hi')
 
 })
 
+function setTemplate(name, ingredients, time) {
+    var thankyouTemplate = _.template($('.thankyouTemplate').text());
+    $('.modal-body').append(thankyouTemplate({
+        nameValue: name,
+        ingredients: ingredients,
+        timeValue: time
 
-var thankyouTemplate = _.template($('.thankyouTemplate').text());
-
-$('.thankyou').append(thankyouTemplate({
-    nameValue: nameValue,
-    ingredients: ingredients,
-    timeValue: timeValue
-
-}))
+    }));
+}
