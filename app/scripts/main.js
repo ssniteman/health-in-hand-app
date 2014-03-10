@@ -13,24 +13,31 @@ $('.orderbtn').click(function() {
 
     console.log(nameValue)
 
-    // var fruitsValue = $('.selection :checked').val();
+    var timeValue = $('.time').val();
 
-    // var banana = $('.banana-class:checked').val() || 'nope';
-    // var spinach = $('.banana-class:checked').val() || 'nope';
-    // var banana = $('.banana-class:checked').val() || 'nope';
-    // var banana = $('.banana-class:checked').val() || 'nope';
-    // var banana = $('.banana-class:checked').val() || 'nope';
-    // var banana = $('.banana-class:checked').val() || 'nope';
-    // var banana = $('.banana-class:checked').val() || 'nope';
 
-    var ingredients = $('.selection input:checked')
 
+    var selectedIngredients = $('.selection input:checked')
+
+    console.log(selectedIngredients)
+
+    var ingredients = []
+    selectedIngredients.each(function() {
+
+        ingredients.push($(this).val());
+    })
     console.log(ingredients)
+
+
 
 })
 
 
-// var customStatus
-
-
 var thankyouTemplate = _.template($('.thankyouTemplate').text());
+
+$('.thankyou').append(thankyouTemplate({
+    nameValue: nameValue,
+    ingredients: ingredients,
+    timeValue: timeValue
+
+}))
